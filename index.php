@@ -8,23 +8,14 @@
 <body>
   
    <?php
-   //scalar types
-   $string = "";
-   $int = 12345;
-   $float = 2.433;
-   $bool = false;
-   $name = "brinda";
-
-   //Array type
-$array = array("Daniel", "Bell", "TRES");
-$names = ["Daniel", "Bell", "TRES"];
-
- //Object type
- //$object = new Car();
-
-
-
+   echo $_SERVER["DOCUMENT_ROOT"];
+   echo "<br>";
+   echo $_SERVER["PHP_SELF"];
+   echo "<br>";
+   echo $_SERVER["SERVER_NAME"];
+   echo "<br>";
+   echo $_SERVER["REQUEST_METHOD"];
    ?>
-   <p> My name is <?php echo $name?></p>
+   
 </body>
 </html>
