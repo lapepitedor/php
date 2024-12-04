@@ -6,16 +6,24 @@
     <title>Document</title>
 </head>
 <body>
-  
-   <?php
-   echo $_SERVER["DOCUMENT_ROOT"];
-   echo "<br>";
-   echo $_SERVER["PHP_SELF"];
-   echo "<br>";
-   echo $_SERVER["SERVER_NAME"];
-   echo "<br>";
-   echo $_SERVER["REQUEST_METHOD"];
-   ?>
+
+<main>
+    <form action ="includes\formhandler.php" method="post">
+        <label for="firstname">Firstname?</label>
+        <input required id="firstname" type = "text" name="firstname" placeholder="Firstname ...">
+
+        <label for="lastname">Lastname?</label>
+        <input id="lastname" type="text" name="lastname" placeholder="Lastname...">
+
+        <label for="favoritepet">Favoritepet?</label>
+        <select id="favoritepet" name="favoritepet">
+            <option value="none">None</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+</main>
    
 </body>
 </html>
